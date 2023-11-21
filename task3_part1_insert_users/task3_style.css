@@ -1,0 +1,70 @@
+body {
+    background-image: url('pink_sun_raise.jpg');
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.parent {
+    margin: 1px;
+    padding: 0 2px;
+    text-align: center;
+}
+
+.child {
+    display: inline-block;
+    padding: 1px 1px;
+    vertical-align: middle;
+}
+
+form {
+    box-shadow: 0 0 5px 0;
+    backdrop-filter: blur(10px);
+    padding: 10px 25px;
+    margin: 60px 200px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    font-family: 'Arial';
+    color: white;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin: 15px 0 0 5px;
+    font-size: 16px;
+    text-align: left;
+}
+
+input {
+    display: block;
+    height: 30px;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 14px;
+    color: black;
+    outline: none;
+    border: none;
+}
+
+table {
+
+    color: black;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+td,
+caption {
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+table td {
+    white-space: nowrap;
+
+}
+
