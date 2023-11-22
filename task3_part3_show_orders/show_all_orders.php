@@ -24,9 +24,9 @@
                 <h5>orders_information</h5>
 
                 <?php
-                for ($i = 0; $i < count($all_orders); $i += 1) {
-                        echo "<pre>";
-                        print_r($all_orders[$i]);
+                foreach($all_orders as $order){
+                    echo "<pre>";
+                        print_r($order);
                         echo "</pre>";
                 }
                 ?>
