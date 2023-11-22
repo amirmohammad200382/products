@@ -16,73 +16,26 @@
             <div class='child' style="display: block; padding : 0px 30px 0px 30px;">
                 <h1>See All Order</h1>
             </div>
-            
 
-
-           <!-- <div class='child' style="margin-top:2px;">
-
-
-            <table>
-                    <caption>User_information</caption>
-                    <tbody>
-                        <tr>
-                            <td>ID </td>
-                            <td><?php echo $user['id']; ?></td>
-                        </tr>
-                        <tr>
-                            <td>First Name</td>
-                            <td><?php echo $user['first_name']; ?></td>
-                        </tr>
-                        <tr>
-                            <td>Last Name</td>
-                            <td><?php echo $user['last_name']; ?></td>
-                        </tr>
-                        <tr>
-                            <td>Phone Number</td>
-                            <td><?php echo $user['phone_number']; ?></td>
-                        </tr>
-                        <tr>
-                            <td>age</td>
-                            <td><?php echo $user['age']; ?></td>
-                        </tr>
-                        <tr>
-                            <td>password</td>
-                            <td><?php echo $user['pasword']; ?></td>
-                        </tr>
-                        <tr>
-                            <td>gender</td>
-                            <td><?php echo $user['gender']; ?></td>
-                        </tr>
-                        <tr style="height: 30px";>
-                            <td>operation : </td>
-                            <td>
-                                <input type="submit"/>
-
-                            </td>
-                        </tr>
-
-                    </tbody>
-                </table>
+            <div class='child' style="margin-top:2px;text-align:left">
 
 
 
-                <div class='child'>
-                    <label for="product_name">Product Name : </label>
-                    <br />
-                    <input type="text" id="product_name" name="product_name" placeholder="Product Name" size="35" />
-                </div>
+                <h5>orders_information</h5>
 
-                <br />
-                <span><?php echo $result; ?></span>
-
-
-                <input type="submit" style="color:black;margin:20px auto;" />
+                <?php
+                for ($i = 0; $i < count($all_orders); $i += 1) {
+                        echo "<pre>";
+                        print_r($all_orders[$i]);
+                        echo "</pre>";
+                }
+                ?>
 
 
-            </div>-->
 
 
-            
+            </div>
+
         </div>
     </form>
 
