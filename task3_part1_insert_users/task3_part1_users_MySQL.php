@@ -2,11 +2,11 @@
 //مقدار اولیه برای فرم ها تا از نمایش ارور در اجرای اول جلوگیری شود
 $productNameErr = "";
 $result = "";
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST") 
 
     //MySQL اطلاعات برای لاگین به دیتابیس
     $servername = "localhost";
-    $database_name = "task_3";
+    $database_name = "task_products";
     $username = "root";
     $password = "";
     try {
@@ -32,4 +32,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } catch (PDOException $e) {
         echo $user . "<br>" . $e->getMessage();
     }
-}

@@ -6,7 +6,7 @@ $result = "";
 
 //MySQL اطلاعات برای لاگین به دیتابیس
 $servername = "localhost";
-$database_name = "task_3";
+$database_name = "task_products";
 $username = "root";
 $password = "";
 try {

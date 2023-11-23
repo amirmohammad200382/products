@@ -21,15 +21,35 @@
 
 
 
-                <h5>orders_information</h5>
+            <table>
 
+            <caption>orders_information</caption>
+            <thead>
+                <tr>
+                    <td>order_id</td>
+                    <td>user_id</td>
+                    <td>user_name</td>
+                    <td>product_id</td>
+                    <td>product_name</td>
+                </tr>
+            </thead>
+            <tbody>
                 <?php
-                foreach($all_orders as $order){
-                    echo "<pre>";
-                        print_r($order);
-                        echo "</pre>";
+
+                foreach($all_orders as $order) {
+                    ?>
+                    <tr>
+                    <td><?= $order["order_id"]?></td>
+                    <td><?= $order["user_id"]?></td>
+                    <td><?= $order["user_name"]?></td>
+                    <td><?= $order["product_id"]?></td>
+                    <td><?= $order["product_name"]?></td>
+                </tr>
+                    <?php
                 }
                 ?>
+            </tbody>
+            </table>
 
 
 

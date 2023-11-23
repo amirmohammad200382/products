@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     //MySQL اطلاعات برای لاگین به دیتابیس
     $servername = "localhost";
-    $database_name = "task_3";
+    $database_name = "task_products";
     $username = "root";
     $password = "";
     try {
@@ -28,6 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $database = new PDO("mysql:host=$servername;dbname=$database_name", $username, $password,);
 
         $productName = $_REQUEST["product_name"];
+        ////////////////
         $userId = ($user['product_id'] + 1);
 
 
